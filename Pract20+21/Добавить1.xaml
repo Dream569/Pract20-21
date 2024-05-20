@@ -1,0 +1,21 @@
+﻿<Window x:Class="Pract20_21.Добавить1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract20_21"
+        mc:Ignorable="d"
+                Title="Добавить товар" x:Name="WindowAddEdit" Loaded="Window_Loaded1" Height="322" Width="370" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="НаименованиеТовара" HorizontalAlignment="Left" Margin="13,13,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <Label Content="КодГруппы" HorizontalAlignment="Left" Margin="16,51,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <Label Content="ЕдиницаИзмерения" HorizontalAlignment="Left" Margin="16,84,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="16,116,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Height="28"/>
+        <TextBox x:Name="NameTovar" HorizontalAlignment="Left" Height="34" Margin="188,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=НаименованиеТовара}"/>
+        <ComboBox x:Name="Kodgroup" HorizontalAlignment="Left" Height="28" Margin="188,51,0,0" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=КодГруппы}"/>
+        <TextBox x:Name="EdIsm" HorizontalAlignment="Left" Height="28" Margin="188,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=ЕдиницыИзмерения}"/>
+        <TextBox x:Name="Cena" HorizontalAlignment="Left" Height="28" Margin="188,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding Path=Цена}"/>
+        <Button Click="Fill_Click" x:Name="btnAddEdit" Content="Добавить" HorizontalAlignment="Left" Margin="26,225,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Height="30"/>
+        <Button Click="Cansel_Click" Content="Отмена" HorizontalAlignment="Left" Margin="185,225,0,0" VerticalAlignment="Top" Width="136" FontSize="14" Height="30"/>
+    </Grid>
+</Window>
